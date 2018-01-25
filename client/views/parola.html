@@ -1,0 +1,18 @@
+<html>
+<title>Parola Admin</title>
+<body>
+
+Enter password: <input id='password' type='text'  />
+<a href="#/books/carsadmin" onclick="javascript:return validatePass()">enter your password and click this</a>
+</body>
+</html>
+<script>
+function validatePass(){
+    if(document.getElementById('password').value == 'claudiu01'){
+        return true;
+    }else{
+        alert('wrong password!!');
+        return false;
+    }
+}
+</script>

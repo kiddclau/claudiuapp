@@ -1,0 +1,28 @@
+<br><br><br><br><br><br><br><br><a href="#/cars/carsadmin">Go Back</a>
+<div class="panel panel-default" ng-init="getCar()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{book.make}}-{{book.model}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{book.image_url}}">
+      </div>
+      <div class="col-md-8">
+      </p><b>Make</b>: {{book.make}}</p>
+       </p>Model: {{book.model}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Fuel Type: {{book.fuel}}</li>
+          <li class="list-group-item">First Registration Date: {{book.reg_date}}</li>
+          <li class="list-group-item">Kilometres: {{book.mileage}}</li>
+            <li class="list-group-item">Price: {{book.price}}</li>
+        </ul>
+        <a target="_blank" href="{{book.buy_url}}" class="btn btn-primary">Buy on Mobile.de</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/cars/edit/{{book._id}}">Edit</a> |  <a href="#" ng-click="removeBook(book._id)">Delete</a>
+  </div>

@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Luxury Cars</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mains.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<br><br><br><br><br><br><br>
+	<nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Admin Panel Claudiu</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+						<li><a href="#/cars/carsadmin">Show cars</a></li>
+            <li><a href="#/cars/add">Add cars</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="panel panel-default" ng-init="getAllCars()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Last Cars</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+    	<div ng-repeat="book in books">
+    		<div class="col-md-6">
+    			<div class="col-md-6">
+    				<h4>Make:{{book.make}}</h4>
+    				<p>Model: {{book.model}}</p>
+            <p>Description: {{book.description}}</p>
+            <h3>Price:{{book.price}}</h3>
+    				<a class="btn btn-primary" href="#/cars/admindetails/{{book._id}}">View Details</a>
+    			</div>
+    			<div class="col-md-6">
+    				<img class="thumbnail" src="{{book.image_url}}">
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

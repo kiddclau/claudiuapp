@@ -1,0 +1,138 @@
+<html ng-app="myApp">
+<head>
+	<title>Luxury Cars</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mains.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+	   <div class="container">
+	     <div class="navbar-header">
+	       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+	         <span class="sr-only">Toggle navigation</span>
+	         <span class="icon-bar"></span>
+	         <span class="icon-bar"></span>
+	         <span class="icon-bar"></span>
+	       </button>
+	       <a href="./" class="navbar-brand"><b>Flow Forged</b></a>
+	     </div>
+	     <nav class="collapse navbar-collapse" role="navigation" id='bs-navbar-collapse'>
+	       <ul class="nav navbar-nav navbar-right">
+					 <li>
+	           <a href="#/cars"><b>HOME</b></a>
+	         </li>
+	         <li>
+	           <a href="#/cars/audi"><b>Audi</b></a>
+	         </li>
+
+	         <li>
+	           <a href="#/cars/BMW"><b>BMW</b></a>
+	         </li>
+	         <li>
+	           <a href="#/cars/mercedes"><b>Mercedes</b></a>
+	         </li>
+	         <li>
+	           <a href="#"><b>Contact</b></a>
+	         </li>
+					 <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>TEST</b> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Mission</a></li>
+							<li><a href="#">Vision</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+					</li>
+	       </ul>
+	     </nav>
+	   </div>
+	 </header>
+</head>
+<!--<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./" class="navbar-brand"><b>Flow Forged</b></a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation" id='bs-navbar-collapse'>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#"><b>Home</b></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Cars</b> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/cars/audi">Audi</a></li>
+            <li><a href="#/cars/BMW">BMW</a></li>
+            <li><a href="#/cars/mercedes">Mercedes-Benz</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><b>Products</b></a>
+        </li>
+        <li>
+          <a href="#"><b>Services</b></a>
+        </li>
+        <li>
+          <a href="#"><b>Contact</b></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>-->
+
+<body>
+<div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<div ng-view></div>
+    		</div>
+    	</div>
+     </div>
+
+    </div><!-- /.container -->
+		<script src="/bower_components/jquery/dist/jquery.js"></script>
+			<script src="/bower_components/angular/angular.js"></script>
+			<script src="/bower_components/angular-route/angular-route.js"></script>
+			<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+			<script src="/app.js"></script>
+			<script src="/controllers/books.js"></script>
+			<script src="/controllers/genres.js"></script>
+			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
+</body>
+
+<footer class="footer">
+  <div class="footer-top section">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-6">
+          <h5>Localizare</h5>
+          <p>Str.Independetei<br>
+            Brașov<br>
+            claudiunedelcu94@gmail.com</p>
+
+        </div>
+
+        <div class="footer-col col-md-3">
+          <h5>Social Media</h5>
+          <ul class="footer-share">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer top -->
+
+</footer>
+</html>
